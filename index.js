@@ -40,3 +40,8 @@ function getWeatherCondition(code) {
 
     return conditions[code] || "Unknown Condition";
 }
+
+function showWeatherData(type) {
+    document.getElementById("tempContainer").style.display = (type === "temp") ? "block" : "none";
+    document.getElementById("conditionContainer").style.display = (type === "condition") ? "block" : "none";
+}
